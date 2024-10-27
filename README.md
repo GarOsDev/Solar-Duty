@@ -6,3 +6,8 @@ una localización geografica específica y ver si ésta le resultaría rentable 
 de vista energético como económico. Pudiendo realizar el analisis de los registros de producción
 energéticos obtenidos a lo largo del tiempo y asi estudiar si dicha instalación le podria ser o no
 rentable.
+
+
+Este proyecto fue desarrollado por Óscar García. Está protegido bajo la licencia GLP.
+
+
