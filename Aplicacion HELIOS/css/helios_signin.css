@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ********************************** CONTENIDO **************************** */
+
+.formulario{
+    margin-bottom: 50px;
+}
+
+.backLink{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*********************************** FOOTER ******************************* */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #2F4F4F;
+    border-top: 5px solid black;
+
+    padding: 20px;
+    color: white;
+    width: 100%;
+}
+
+.f_menu {
+    list-style: none;
+}
+
+.f_menu>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+    
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_menu>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_menu>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************** */
+
+.f_infor {
+    list-style: none;
+}
+
+.f_infor>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_infor>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_infor>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************** */
+
+.f_feed {
+    list-style: none;
+}
+
+.f_feed>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_feed>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_feed>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************************  */
+
+.rrss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rrssicon{
+    width: 40px;
+    margin: 10px;
+}
+
+/*********************************** MEDIA QUERIES ******************************* */
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 990px) {
+
+    .fechaCont {
+        padding: 15px 0;
+    }
+
+    .menu {
+        padding: 15px 0;
+    }
+
+}
+
+@media screen and (max-width: 767px) {}

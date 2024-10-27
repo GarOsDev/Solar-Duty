@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin-top: 20px;
+    padding: 45px;
+    background-color: #2F4F4F;
+}
+
+nav {
+    background-color: #f72c25;
+    color: white;
+}
+
+h4>a {
+    text-decoration: none;
+    color: white;
+}
+
+h4>a:hover {
+    background-color: #FC6736;
+    transition: background-color 0.5s;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+h5 {
+    background-color: #2F4F4F;
+}
+
+.cabeceraTit{
+    background-color: #A91D3A ;
+}
+
+.cabeceraUsu{
+    background-color: #A91D3A ;
+}
+
+.mainsun{
+	width: 100px;
+	cursor: pointer;
+}
+
+.barraMenu{
+    background-color: #6F8AB7;
+}
+
+
+/* ******************************** CREACION DE INSTALACION CONTENIDO ****************************** */
+
+.instalacion {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+
+    margin: 3% 0;
+    background-color: #35374B;
+
+}
+
+
+
+/* ************************ DISEÑO DE INSTALACIÓN ******************* */
+
+.campoCreacion {
+
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.v12 {
+    height: 70px;
+    width: 50px;
+    cursor: move;
+}
+
+.v24 {
+    height: 70px;
+    width: 50px;
+    cursor: move;
+}
+
+.bateria {
+    height: 70px;
+    width: 50px;
+    cursor: move;
+}
+
+.inversor {
+    height: 70px;
+    width: 50px;
+    cursor: move;
+}
+
+.regulador {
+    height: 70px;
+    width: 50px;
+    cursor: move;
+}
+
+
+/* ************************ CAMPO DE DISEÑO PLANTILLA ******************* */
+
+.plantilla {
+    position: relative;
+}
+
+.imagenFondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+
+.aparatos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.aparatos > img{
+    
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+}
+
+.aparatos > img:hover{
+    
+    transform: scale(1.1) rotate(-20deg);
+    
+}
+
+/******************************* INSTALACION CREADA ********************** */
+
+
+/************************* ANIMACION PILA ******************* */
+
+.loader {
+    width: 80px;
+    height: 40px;
+    color: #61988E;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    padding: 3px;
+    background:
+        repeating-linear-gradient(90deg, currentColor 0 10px, #0000 0 15px) 0/0% no-repeat content-box content-box;
+    position: relative;
+    box-sizing: border-box;
+    animation: l5 2s infinite steps(6);
+
+    margin: 5% auto;
+
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: 100%;
+    width: 10px;
+    background:
+        linear-gradient(#0000 calc(50% - 7px), currentColor 0 calc(50% - 5px),
+            #0000 0 calc(50% + 5px), currentColor 0 calc(50% + 7px), #0000 0) left /100% 100%,
+        linear-gradient(currentColor calc(50% - 5px), #0000 0 calc(50% + 5px), currentColor 0) left /2px 100%,
+        linear-gradient(#0000 calc(50% - 5px), currentColor 0 calc(50% + 5px), #0000 0) right/2px 100%;
+    background-repeat: no-repeat;
+}
+
+@keyframes l5 {
+    100% {
+        background-size: 120%
+    }
+}
+
+/***************************** CUERPO DE DISEÑO **************************** */
+
+.ConInstalacion{
+    background-color: #d3d3d3;
+}
+
+.tituloInstalacion{
+    background-color: #252323;
+}
+
+.resumen{
+    background-color: #252323;
+}
+
+.produccion{
+    background-color: #252323;
+}
+
+.grafico{
+    background-color: white;
+}
+
+.imagenEmisiones{
+    width: 75px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.estadoInstalacion{
+    margin-bottom: 50px;
+}
+
+
+/*********************************** FOOTER ******************************* */
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #2F4F4F;
+    border-top: 5px solid black;
+
+    padding: 20px;
+    color: white;
+    width: 100%;
+}
+
+.f_menu {
+    list-style: none;
+}
+
+.f_menu>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+    
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_menu>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_menu>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************** */
+
+.f_infor {
+    list-style: none;
+}
+
+.f_infor>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_infor>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_infor>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************** */
+
+.f_feed {
+    list-style: none;
+}
+
+.f_feed>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_feed>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_feed>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************************  */
+
+.rrss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rrssicon{
+    width: 40px;
+    margin: 10px;
+}

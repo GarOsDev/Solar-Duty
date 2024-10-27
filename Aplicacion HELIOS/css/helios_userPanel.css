@@ -1,0 +1,274 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	margin-top: 20px;
+	padding: 45px;
+	background-color: #2F4F4F;
+}
+
+nav {
+	background-color: #f72c25;
+	color: white;
+}
+
+h4>a {
+	text-decoration: none;
+	color: white;
+}
+
+h4>a:hover {
+	background-color: #FC6736;
+	transition: background-color 0.5s;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+h5 {
+	background-color: #2F4F4F;
+}
+
+.barraMenu{
+    background-color: #6F8AB7;
+}
+
+.cabeceraTit{
+    background-color: #A91D3A ;
+}
+
+.cabeceraUsu{
+    background-color: #A91D3A ;
+}
+
+.mainsun{
+	width: 100px;
+	cursor: pointer;
+}
+
+/* ************************ PANELES INFORMACION **************** */
+
+.info_localizacion {
+	background-color: #252323;
+	padding: 15px;
+	
+}
+
+.info_meteo {
+	background-color: #252323;
+	padding: 15px;
+	
+}
+
+.info_solar {
+	background-color: #252323;
+	padding: 15px;
+	
+}
+
+.imgT {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.horaActual{
+	background-color: #2F4F4F;
+	font-size: 20px;
+}
+
+
+
+
+/****************************** ANIMACION SOL *****************************/
+
+.mensaje{
+	position: absolute;
+	background-color: #252323;
+	top: 20px;
+}
+
+.simulation {
+	overflow: hidden;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-color: #4D869C;
+}
+
+.timeline {
+	width: 100%;
+	height: 5px;
+	background-color: #ccc;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: calc(50% - 1px);
+}
+
+.sun {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	width: 80px;
+	height: 80px;
+	background-color: #ffd700;
+	border-radius: 50%;
+	box-shadow: 0 0 20px #2F4F4F;
+	animation: rotateSun 10s linear infinite, pulseEffect 2s ease-in-out infinite alternate;
+	z-index: 1;
+}
+
+.tiempo{
+	position: absolute;
+	z-index: 1;
+	background-color: #A91D3A;
+	margin-top: 150px;
+	padding: 5px;
+	border-radius: 20%;
+	color: white;
+	border: 3px solid black;
+}
+
+@keyframes rotateSun {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+@keyframes pulseEffect {
+	from {
+		transform: scale(1);
+		box-shadow: 0 0 20px #ffd700;
+	}
+
+	to {
+		transform: scale(1.1);
+		box-shadow: 0 0 50px #ffd700, 0 0 100px #ffd700, 0 0 150px #ffd700;
+	}
+}
+
+
+.chart{
+	margin: 50px 0;
+}
+
+
+/*********************************** FOOTER ******************************* */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #2F4F4F;
+    border-top: 5px solid black;
+
+    padding: 20px;
+    color: white;
+}
+
+.f_menu {
+    list-style: none;
+}
+
+.f_menu>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+    
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_menu>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_menu>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************** */
+
+.f_infor {
+    list-style: none;
+}
+
+.f_infor>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_infor>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_infor>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************** */
+
+.f_feed {
+    list-style: none;
+}
+
+.f_feed>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_feed>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_feed>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************************  */
+
+.rrss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rrssicon{
+    width: 40px;
+    margin: 10px;
+}

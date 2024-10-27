@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin-top: 20px;
+    padding: 45px;
+    background-color: #2F4F4F;
+}
+
+nav {
+    background-color: #f72c25;
+    color: white;
+}
+
+h4>a {
+    text-decoration: none;
+    color: white;
+}
+
+h4>a:hover {
+    background-color: #FC6736;
+    transition: background-color 0.5s;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+h5 {
+    background-color: #2F4F4F;
+}
+
+.cabeceraTit {
+    background-color: #A91D3A;
+}
+
+.cabeceraUsu {
+    background-color: #A91D3A;
+}
+
+.mainsun {
+    width: 100px;
+    cursor: pointer;
+}
+
+.barraMenu {
+    background-color: #6F8AB7;
+}
+
+
+
+/***************************** CUERPO *************************** */
+
+.tituloCuenta {
+    background-color: #252323;
+}
+
+.datosPersonales {
+    background-color: #A0153E;
+}
+
+.datosCuenta {
+    background-color: #00224D;
+}
+
+.ajustesCuenta {
+    background-color: #5D0E41;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-mask: linear-gradient(0deg, #000 55%, #0000 0) bottom/100% 18.18%;
+    background:
+        linear-gradient(#f03355 0 0) bottom/100% 0% no-repeat #ddd;
+    animation: l8 3s infinite steps(7);
+}
+
+@keyframes l8 {
+    100% {
+        background-size: 100% 115%
+    }
+}
+
+/*********************************** FOOTER ******************************* */
+
+/* .foot{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #2F4F4F;
+    border-top: 5px solid black;
+
+    padding: 20px;
+    color: white;
+}
+
+.f_menu {
+    list-style: none;
+}
+
+.f_menu>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+    
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_menu>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_menu>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************** */
+
+.f_infor {
+    list-style: none;
+}
+
+.f_infor>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_infor>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_infor>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************** */
+
+.f_feed {
+    list-style: none;
+}
+
+.f_feed>li {
+    background-color: #011520;
+    margin: 10px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    cursor: pointer;
+
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.f_feed>li:hover {
+    transform: translateY(-10px);
+    background-color: #f72c25;
+    color: black;
+}
+
+.f_feed>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ************************************************************  */
+
+.rrss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rrssicon{
+    width: 40px;
+    margin: 10px;
+}
