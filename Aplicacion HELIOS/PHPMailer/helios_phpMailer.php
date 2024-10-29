@@ -27,8 +27,8 @@ function phpmailer($asunto,$cuerpoMensaje,$destinatario,$nombreDestinatario)
         $mail->isSMTP();                                               // Activar envio SMTP
         $mail->Host  = 'smtp.gmail.com';                     // Servidor SMTP
         $mail->SMTPAuth  = true;                                       // Identificacion SMTP
-        $mail->Username  = 'fiercesparko11@gmail.com';                  // Usuario SMTP
-        $mail->Password  = 'rytyuiwczurkcgwn';              // Contraseña SMTP
+        $mail->Username  = '';                  // Usuario SMTP
+        $mail->Password  = '';              // Contraseña SMTP
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port  = 587;
         $mail->setFrom('heliosrequests@gmail.com', 'HELIOS Support');                // Remitente del correo
